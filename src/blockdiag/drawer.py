@@ -182,7 +182,7 @@ class DiagramDraw(object):
 
             font = self.metrics.font_for(edge)
             self.drawer.textarea(metrics.labelbox, edge.label, font=font,
-                                 fill=edge.textcolor, outline=self.fill)
+                                 fill=edge.textcolor)
 
     def save(self, size=None):
         return self.drawer.save(self.filename, size, self.format)
